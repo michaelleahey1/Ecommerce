@@ -3,12 +3,12 @@ package org.example;
 public class Product {
     //objects
 
-    private  String name = new String ("Complete Works of Poe");
-    private  Double price = new Double(25.00);
-    private  String category = new String ("fiction");
-    private  Integer quantity = new Integer(1);
-    private  String author = new String( "Edgar Alan Poe" );
-    private String color = new String("black");
+    private  String name;
+    private  Double price;
+    private  String category;
+    private  Integer quantity;
+    private  String author;
+    private String color;
 
 
     //constructors
@@ -68,5 +68,17 @@ public class Product {
     }
     public void setColor(String color) {
         this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", category='" + category + '\'' +
+                ", quantity=" + quantity +
+                ", author='" + author + '\'' +
+                ", color='" + color + '\'' +
+                '}';
     }
 }
