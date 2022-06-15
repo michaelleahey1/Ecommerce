@@ -77,7 +77,7 @@ class Product {
         int val = 1;
         System.out.println("Integer value: " +val );
 
-        return quantityOfProduct;
+        return false;
     }
 
     @Override

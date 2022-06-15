@@ -1,14 +1,20 @@
 package org.example;
 
+import java.util.ArrayList;
+
 public class Shop{
-    public static void Shop(String[] args) {
-        //objects
+     //Objects
+    private double totalAmount;
+    private String inventory;
+    public <index> void inventory() {
+        ArrayList<index> arrayList = new ArrayList<index>( );
+    }
+
+    //constructors
 
 
-        //constructors
 
 
-        // methods
+    // methods
 
     }
-}
