@@ -1,6 +1,6 @@
 package org.example;
 
-public class Product {
+class Product {
     //objects
 
     private  String name;
@@ -68,6 +68,16 @@ public class Product {
     }
     public void setColor(String color) {
         this.color = color;
+    }
+
+    //Methods
+    public boolean buy(){
+        boolean quantityOfProduct = true;
+        System.out.println("boolean value: " + quantityOfProduct);
+        int val = 1;
+        System.out.println("Integer value: " +val );
+
+        return quantityOfProduct;
     }
 
     @Override
