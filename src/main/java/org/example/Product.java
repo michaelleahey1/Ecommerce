@@ -1,6 +1,6 @@
 package org.example;
 
-class Product {
+public class Product {
     //objects
 
     private  String name;
@@ -9,18 +9,35 @@ class Product {
     private  Integer quantity;
     private  String author;
     private String color;
+    private char size;
 
 
     //constructors
-    public Product(String name, Double price, String category, Integer quantity, String author, String color) {
+    public Product(String name, Double price, String category, Integer quantity, String author, String color, char size) {
         this.name = name;
         this.price = price;
         this.category = category;
         this.quantity = quantity;
         this.author = author;
         this.color = color;
+        this.size = size;
+    }
+    public Product(String name, Double price, String category, Integer quantity, String author) {
+        this.name = name;
+        this.price = price;
+        this.category = category;
+        this.quantity = quantity;
+        this.author = author;
+    }
+    public Product(String name, Double price, String category, Integer quantity) {
+        this.name = name;
+        this.price = price;
+        this.category = category;
+        this.quantity = quantity;
     }
 
+    public Product(String s, double v, String apparel, int i, String teal, char m) {
+    }
 
     //getters and setters
     public String getName() {
@@ -68,16 +85,6 @@ class Product {
     }
     public void setColor(String color) {
         this.color = color;
-    }
-
-    //Methods
-    public boolean buy(){
-        boolean quantityOfProduct = true;
-        System.out.println("boolean value: " + quantityOfProduct);
-        int val = 1;
-        System.out.println("Integer value: " +val );
-
-        return false;
     }
 
     @Override
