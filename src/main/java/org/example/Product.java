@@ -38,6 +38,15 @@ public class Product {
 
     public Product(String s, double v, String apparel, int i, String teal, char m) {
     }
+    public boolean buy() {
+        var retVal = false;
+        if (quantity > 0) {
+            quantity--;
+            retVal = true;
+        } else {
+            retVal = false;
+        } return retVal;
+    }
 
     //getters and setters
     public String getName() {
